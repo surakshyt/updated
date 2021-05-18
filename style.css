@@ -1,0 +1,552 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+	scroll-behavior: smooth;
+
+}
+#home{
+   height: 110vh;
+   width: 100%;
+   background-image: url('./images/49739334_2277972882444469_8499524959188549632_n.jpg');
+   background-repeat: no-repeat;
+   background-color: rgba(129, 121, 121, 0.733);
+   background-size: cover;
+   opacity: 0.7;
+  overflow-x: hidden;
+   position: relative;
+
+   
+   
+}
+.logo{
+    margin-left: 25px;
+    height: 150px;
+    width: 220px;
+    float: left;
+    background-image: url('/images/vivek1.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.navbar nav{
+    display: block;
+    margin-right: 15px;
+    margin-top: 5px;
+}
+.navbar nav  ul{
+    float: right;
+    list-style-type: none;
+    
+ }
+ .navbar li{
+    padding: 5px 8px 4px 7px;
+    display: inline-block;
+    
+ }
+
+.navbar li a{
+   
+    color: #fff;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size:22px ;
+    font-family: 'open sans';
+    
+}
+.navbar ul li:hover{
+    background-color: #000;
+    transition: 0.7s linear;
+   
+}
+
+.checkbtn{
+    font-size: 25px;
+    float: right;
+    margin-right: 0px;
+    margin-top: 50px;
+    color: #000;
+    font-weight: bolder;
+    cursor: pointer;
+    display: none;
+    
+}
+#check{
+    display: none;
+}
+
+.text{
+    top: 300px;
+    left: 200px;
+    position: relative;
+    display: inline-block;
+    
+  
+}
+.text p{
+    color: white;
+    font-size: 60px;
+   
+  font-family: cursive;
+}
+.text  #sub{
+    font-size: 25px;
+   text-align: center;
+    left: 250px;
+
+
+}
+.text button {
+   
+    width: 150px;
+  font-family: monospace;
+    height: 50px;
+   
+    background-color: rgb(248, 112, 88);
+    color: white;
+    margin-top: 70px;
+    margin-left: 200px;
+    cursor: pointer;
+    
+  
+    
+}
+.text button a{
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+.text button:hover{
+    background-color: rgb(214, 56, 28);
+    
+    
+}
+#about{
+    height: 100vh;
+    width: 100%;
+    background-color: #464242;
+    position: relative;
+
+}
+#about img {
+    height: 550px;
+    margin-top: 50px;
+    margin-right: 10px;
+    float: right;
+}
+#about p{
+    margin-left: 150px;
+    width: 20%;
+    height: 50px;
+    color: white;
+    margin-top: 150px;
+    justify-content: center;
+    display: block;
+    font-size: 22px;
+}
+
+ #about .name{
+     position: absolute;
+    font-family: monospace;
+    font-size: 45px;
+    color: white;
+   margin-top: 50px;
+  margin-left: 180px;
+  
+}
+#about button{
+    left: 150px;
+    top: 300px;
+    position: relative;
+    width: 150px;
+    height: 60px;
+    background-color: green;
+   cursor : pointer;
+}
+#about button a{
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+}
+#music{
+    height: 110vh;
+    width: 100%;
+   
+   
+}
+#music h3{
+    color: black;
+    font-size: 45px;
+    text-align: center;
+    font-family: cursive;
+    margin-bottom: 25px;
+    
+}
+.row{
+    height: 300px;
+    width: 100%;
+    display: flex;
+  
+}
+.col{
+    height:275px ;
+    width: 500px;
+    margin-left: 10px;
+    position: relative;
+    float: left;
+}
+.col img{
+   
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+   
+}
+
+.block-text{
+    position: absolute;
+    top: 0px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    background-color: rgb(223, 115, 14,0.8);
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: opacity .5s;
+
+   }
+   .block-text h2{
+    
+       font-size: 25px;
+       color: white;
+
+    }
+    .block-text a{
+        margin-top: 200px;
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+        padding: 10px;
+        padding-top: 20px;
+      
+    }
+    .block-text:hover{
+        opacity: 1;
+    }
+
+    .block-text > *{
+        transform: translateY(20px);
+        transition: transform 0.5s ;
+    }
+    .block-text:hover > *{
+        transform: translateY(0px);
+    }
+    #photo{
+        height: 135vh;
+        width: 100%;
+        background-color: black;
+      
+    }
+    #photo h2{
+    text-align: center;
+    font-family: cursive;
+    font-size: 40px;
+    margin-bottom: 20px;
+    }
+    #photo .row{
+        height: 250px;
+    }
+    
+    .photo-box{
+        height: 250px;
+        width: 33.33%;
+        background-color: #fff;
+        float: left;
+     
+    }
+    .photo-box img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        
+    }
+
+    #contact{
+        height: 50vh;
+        width: 100%;
+    }
+   #contact .info{
+       margin-top: 150px;
+       display: block;
+       justify-content: center;
+       text-align: center;
+   }
+   .info h1{
+    font-family:  'lato';
+       font-size: 35px;
+
+   }
+   .info p{
+      margin-top: 40px;
+      font-size: 20px;
+display: flex;
+justify-content: center;
+}
+.main{
+    display: flex;
+    
+    margin-top: 35px;
+    
+}
+.fa-phone{
+    font-size: 45px;
+    text-align: center;
+    margin-bottom: 15px;
+
+}
+.fa-envelope{
+    font-size: 45px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.call{
+    display: flex;
+    flex-direction: column;
+    margin-left: 450px;
+    font-size: 20px;
+}
+
+.mail{
+    margin-left: 200px;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+.mail span{
+    color:rgb(236, 116, 18);
+}
+#footer{
+    height: 34vh;
+    width: 100%;
+    background-color: rgb(236, 116, 18);
+    position: relative;
+  
+    
+}
+#footer span{
+    margin-top: 45px;
+    font-size: 30px;
+    padding-top: 15px;
+    margin-left: 15px;
+    color: #fff
+}
+#footer ul{
+    margin-left: 55px;
+    margin-top: 5px;
+    list-style: none;
+  
+}
+#footer li {
+    padding-top : 5px;
+
+}
+#footer li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding-top : 20px;
+}
+ #footer p{
+     text-align: center;
+     color: white;
+     font-size: 18px;
+ }
+ #social span{
+     font-size: 23px;
+     color: #fff;
+     float: right;
+    margin-top: -200px;
+    font-family: 'lato';
+  margin-right: 20px;
+    
+ }
+
+#social .social-links{
+     display: block;
+     float: right;
+     margin-right: 25px;
+     height: 100%;
+    
+     margin-top: -30px;
+
+ }
+ .social-links .fab{
+   font-size: 35px;
+   padding-right: 15px;
+   color: #fff;
+ }
+ 
+ 
+@media(max-width: 500px){
+    
+    #home{
+        background-image: url('./images/red.jpg');
+        background-size: cover;
+        height: 110vh;
+         opacity: 1;
+    }
+    .navbar .logo{
+       height: 200px;
+       width: 100px;
+       display: block;
+       margin-top: 30px;
+    }
+    
+    .navbar ul{
+
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 130px;
+        text-align: center;
+        transition: all 0.5s;
+        left: -100%;
+    
+    }
+    .navbar ul li{
+      display: block;  
+      padding:25px ;
+   
+    }
+    .navbar ul li a{
+        color: rgb(255, 255, 255);
+        font-weight: bolder;
+        font-size: 18px;
+    }
+   .navbar  a:hover{
+    color: white;
+        
+    }
+   .checkbtn{
+        display: block;
+    }
+    #check:checked ~  ul {
+   
+    
+   left: 0px;
+    }
+    .text{
+        display: none;
+    }
+    .text button{
+        display: none;
+    }
+    #about {
+        background-color: rgb(28, 117, 117);
+    }
+    #about img{
+        display: none;
+    }
+     #about .name{
+        font-size: 30px;
+        text-align: center;
+    }
+    #about p{
+        width: 80%;
+        margin-left: 15px;
+        font-size: 20px;
+
+    }
+    #about button{
+      margin-left: -180px; 
+      margin-top: -100px; 
+    }
+    #music h3{
+        margin-top: 5px;
+        font-size: 28px;
+    }
+    #music .row{
+    
+        display: block;
+        flex-direction: column;
+        width: 90%;
+        
+    }
+    #music .col{
+        margin-top: 10px;
+    }
+    
+    #photo .row {
+        display: block;
+        flex-direction: column;
+        
+    }
+    #photo h2{
+        font-size: 20px;
+        margin-top: 20px;
+    }
+    #photo .photo-box{
+        width: 100%;
+    }
+    #contact {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1600px;
+        
+    }
+    #contact{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+    .info{
+        margin-top: -20px;
+    } 
+    .main{
+      margin-left: -500px;
+        display: flex;
+        flex-direction: column;
+    }
+    .main span{
+        text-align: center;
+    }
+    .mail{
+        display: flex;
+        margin-left: 450px;
+        margin-top: 30px;
+
+        }
+      
+    html{
+        overflow-x: hidden;
+    }
+    #footer{
+        margin-top: 140px;
+        height: 81vh;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        
+        justify-content: center;
+    }
+    #footer p{
+        display: none;
+    }
+    #social{
+        display: flex;
+        flex-direction: column;
+        margin-top: 250px;
+        margin-left: 110px;
+    }
+    .social-links{
+       
+        margin-top: 25px !important;
+        
+    }
+     
+}
+   
